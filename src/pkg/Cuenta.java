@@ -30,11 +30,11 @@ public class Cuenta {
 		this.titular = titular;
 	}
 	public void ingresar(int i) {
-		Saldo =500;
+		Saldo+= i;
 		
 	}
 	public void retirar(int i) {
-		Saldo=-500;
+		Saldo-=i;
 		
 	}
 	
