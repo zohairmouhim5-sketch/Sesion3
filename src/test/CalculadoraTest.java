@@ -8,7 +8,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import pkg.Claculadora;
+import pkg.Calculadora;
 
 class CalculadoraTest {
 
@@ -37,7 +37,7 @@ class CalculadoraTest {
 	@Test
 	void testRestaer() {
 		int valorEsperado = 3;
-		int valorReal = Claculadora.restar(5,  2);
+		int valorReal = Calculadora.restar(5,  2);
 		
 		assertEquals(valorEsperado, valorReal);
 	}
@@ -45,7 +45,7 @@ class CalculadoraTest {
 	@Test
 	void testDividir() {
 		int valorEsperado = 0;
-		int valorReal = Claculadora.dividir(1,  2);
+		int valorReal = Calculadora.dividir(1,  2);
 		
 		assertEquals(valorEsperado, valorReal);
 	}
@@ -53,7 +53,7 @@ class CalculadoraTest {
 	@Test
 	void testMultiplicar() {
 		int valorEsperado = 20;
-		int valorReal = Claculadora.multiplicar(5,  4);
+		int valorReal = Calculadora.multiplicar(5,  4);
 		
 		assertEquals(valorEsperado, valorReal);
 	}
