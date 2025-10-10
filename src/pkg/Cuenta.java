@@ -33,10 +33,16 @@ public class Cuenta {
 		Saldo+= i;
 		
 	}
-	public void retirar(int i) {
-		Saldo-=i;
+	public boolean retirar(int i) {
+		if (Saldo - i >= -500) {
+            Saldo -= i;
+            return true;
 		
+	}else {
+		System.out.println("Fondos insuficientes (saldo " + Saldo + "€) en la cuenta " + numero + " para el reintegro de " + i + "€");
+        return false;
 	}
 	
-	
+	}
 }
+
